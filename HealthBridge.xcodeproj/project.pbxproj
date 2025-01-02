@@ -6,17 +6,68 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1763473D2D04D5AD008DB487 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176347372D04D5AD008DB487 /* Preview Assets.xcassets */; };
+		1763473E2D04D5AD008DB487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176347392D04D5AD008DB487 /* Assets.xcassets */; };
+		1763473F2D04D5AD008DB487 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763473A2D04D5AD008DB487 /* AppTabView.swift */; };
+		176347402D04D5AD008DB487 /* HealthBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763473B2D04D5AD008DB487 /* HealthBridgeApp.swift */; };
+		1763474B2D04D648008DB487 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763474A2D04D648008DB487 /* HapticManager.swift */; };
+		1763474D2D04D6B5008DB487 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763474C2D04D6B5008DB487 /* View+Ext.swift */; };
+		1763474F2D04D722008DB487 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763474E2D04D722008DB487 /* ViewModel.swift */; };
+		176347512D04D7E7008DB487 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176347502D04D7E7008DB487 /* Enums.swift */; };
+		1780EB732D237DCB001698A2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB722D237DCB001698A2 /* Profile.swift */; };
+		1780EB742D237DCB001698A2 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB712D237DCB001698A2 /* Letter.swift */; };
+		1780EB782D237EF9001698A2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB762D237EF9001698A2 /* ProfileView.swift */; };
+		1780EB792D237EF9001698A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB752D237EF9001698A2 /* HomeView.swift */; };
+		1780EB7A2D237EF9001698A2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB772D237EF9001698A2 /* SearchView.swift */; };
+		1780EB7D2D2384EB001698A2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB7C2D2384EB001698A2 /* TabBar.swift */; };
+		1780EB7F2D238770001698A2 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB7E2D238770001698A2 /* ScaleButtonStyle.swift */; };
+		1780EB812D2391A4001698A2 /* WriteLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB802D2391A4001698A2 /* WriteLetterView.swift */; };
+		1780EB862D239815001698A2 /* CircularSFSymbolButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB852D239815001698A2 /* CircularSFSymbolButtonLabel.swift */; };
+		1780EB882D239A1B001698A2 /* CapsuleButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB872D239A1B001698A2 /* CapsuleButtonLabel.swift */; };
+		1780EB8B2D24D5FF001698A2 /* ProgressBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB8A2D24D5FF001698A2 /* ProgressBlurView.swift */; };
+		1780EB8E2D2506DD001698A2 /* LetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB8D2D2506DD001698A2 /* LetterCell.swift */; };
+		1780EB902D2515AE001698A2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB8F2D2515AE001698A2 /* MockData.swift */; };
+		1780EB922D2658B9001698A2 /* DoctorProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB912D2658B9001698A2 /* DoctorProfileCell.swift */; };
+		1780EB942D265A82001698A2 /* PatientProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB932D265A82001698A2 /* PatientProfileCell.swift */; };
+		1780EB962D266196001698A2 /* ShelfWithDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB952D266196001698A2 /* ShelfWithDoctorView.swift */; };
+		1780EB982D26619F001698A2 /* ShelfWithPatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB972D26619F001698A2 /* ShelfWithPatientView.swift */; };
+		1780EB9B2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9A2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift */; };
+		1780EB9D2D267417001698A2 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9C2D267417001698A2 /* LetterView.swift */; };
+		1780EB9F2D267BD5001698A2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9E2D267BD5001698A2 /* SignInView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1763471D2D04D504008DB487 /* HealthBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		176347372D04D5AD008DB487 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		176347392D04D5AD008DB487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1763473A2D04D5AD008DB487 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		1763473B2D04D5AD008DB487 /* HealthBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBridgeApp.swift; sourceTree = "<group>"; };
+		1763474A2D04D648008DB487 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		1763474C2D04D6B5008DB487 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		1763474E2D04D722008DB487 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		176347502D04D7E7008DB487 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		1780EB712D237DCB001698A2 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		1780EB722D237DCB001698A2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1780EB752D237EF9001698A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1780EB762D237EF9001698A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1780EB772D237EF9001698A2 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1780EB7C2D2384EB001698A2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1780EB7E2D238770001698A2 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
+		1780EB802D2391A4001698A2 /* WriteLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLetterView.swift; sourceTree = "<group>"; };
+		1780EB852D239815001698A2 /* CircularSFSymbolButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSFSymbolButtonLabel.swift; sourceTree = "<group>"; };
+		1780EB872D239A1B001698A2 /* CapsuleButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButtonLabel.swift; sourceTree = "<group>"; };
+		1780EB8A2D24D5FF001698A2 /* ProgressBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBlurView.swift; sourceTree = "<group>"; };
+		1780EB8D2D2506DD001698A2 /* LetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCell.swift; sourceTree = "<group>"; };
+		1780EB8F2D2515AE001698A2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		1780EB912D2658B9001698A2 /* DoctorProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileCell.swift; sourceTree = "<group>"; };
+		1780EB932D265A82001698A2 /* PatientProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileCell.swift; sourceTree = "<group>"; };
+		1780EB952D266196001698A2 /* ShelfWithDoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfWithDoctorView.swift; sourceTree = "<group>"; };
+		1780EB972D26619F001698A2 /* ShelfWithPatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfWithPatientView.swift; sourceTree = "<group>"; };
+		1780EB9A2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreAboutAdditionalMedicalInformationSharing.swift; sourceTree = "<group>"; };
+		1780EB9C2D267417001698A2 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		1780EB9E2D267BD5001698A2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1763471F2D04D504008DB487 /* HealthBridge */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HealthBridge;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1763471A2D04D504008DB487 /* Frameworks */ = {
@@ -32,7 +83,7 @@
 		176347142D04D504008DB487 = {
 			isa = PBXGroup;
 			children = (
-				1763471F2D04D504008DB487 /* HealthBridge */,
+				1763473C2D04D5AD008DB487 /* HealthBridge */,
 				1763471E2D04D504008DB487 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +94,153 @@
 				1763471D2D04D504008DB487 /* HealthBridge.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		176347382D04D5AD008DB487 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				176347372D04D5AD008DB487 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1763473C2D04D5AD008DB487 /* HealthBridge */ = {
+			isa = PBXGroup;
+			children = (
+				176347462D04D5D7008DB487 /* Others */,
+				176347442D04D5C7008DB487 /* Extensions */,
+				176347472D04D5E2008DB487 /* Models */,
+				176347412D04D5B7008DB487 /* Views */,
+				1763473B2D04D5AD008DB487 /* HealthBridgeApp.swift */,
+				176347382D04D5AD008DB487 /* Preview Content */,
+				176347392D04D5AD008DB487 /* Assets.xcassets */,
+			);
+			path = HealthBridge;
+			sourceTree = "<group>";
+		};
+		176347412D04D5B7008DB487 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				176347432D04D5C3008DB487 /* Components */,
+				176347422D04D5BD008DB487 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		176347422D04D5BD008DB487 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1763473A2D04D5AD008DB487 /* AppTabView.swift */,
+				1780EB802D2391A4001698A2 /* WriteLetterView.swift */,
+				1780EB752D237EF9001698A2 /* HomeView.swift */,
+				1780EB762D237EF9001698A2 /* ProfileView.swift */,
+				1780EB772D237EF9001698A2 /* SearchView.swift */,
+				1780EB952D266196001698A2 /* ShelfWithDoctorView.swift */,
+				1780EB972D26619F001698A2 /* ShelfWithPatientView.swift */,
+				1780EB9C2D267417001698A2 /* LetterView.swift */,
+				1780EB9E2D267BD5001698A2 /* SignInView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		176347432D04D5C3008DB487 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB992D266F4C001698A2 /* Learn More */,
+				1780EB892D24D5F4001698A2 /* Others */,
+				1780EB8C2D2505F2001698A2 /* Cells */,
+				1780EB822D2397E6001698A2 /* Button Label */,
+				1780EB7B2D2384E3001698A2 /* AppTabView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		176347442D04D5C7008DB487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1763474C2D04D6B5008DB487 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		176347462D04D5D7008DB487 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				176347492D04D633008DB487 /* Helpers & Managers */,
+				176347482D04D605008DB487 /* Custom Button Styles */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		176347472D04D5E2008DB487 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1763474E2D04D722008DB487 /* ViewModel.swift */,
+				176347502D04D7E7008DB487 /* Enums.swift */,
+				1780EB712D237DCB001698A2 /* Letter.swift */,
+				1780EB722D237DCB001698A2 /* Profile.swift */,
+				1780EB8F2D2515AE001698A2 /* MockData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		176347482D04D605008DB487 /* Custom Button Styles */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB7E2D238770001698A2 /* ScaleButtonStyle.swift */,
+			);
+			path = "Custom Button Styles";
+			sourceTree = "<group>";
+		};
+		176347492D04D633008DB487 /* Helpers & Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1763474A2D04D648008DB487 /* HapticManager.swift */,
+			);
+			path = "Helpers & Managers";
+			sourceTree = "<group>";
+		};
+		1780EB7B2D2384E3001698A2 /* AppTabView */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB7C2D2384EB001698A2 /* TabBar.swift */,
+			);
+			path = AppTabView;
+			sourceTree = "<group>";
+		};
+		1780EB822D2397E6001698A2 /* Button Label */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB852D239815001698A2 /* CircularSFSymbolButtonLabel.swift */,
+				1780EB872D239A1B001698A2 /* CapsuleButtonLabel.swift */,
+			);
+			path = "Button Label";
+			sourceTree = "<group>";
+		};
+		1780EB892D24D5F4001698A2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB8A2D24D5FF001698A2 /* ProgressBlurView.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1780EB8C2D2505F2001698A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB8D2D2506DD001698A2 /* LetterCell.swift */,
+				1780EB912D2658B9001698A2 /* DoctorProfileCell.swift */,
+				1780EB932D265A82001698A2 /* PatientProfileCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1780EB992D266F4C001698A2 /* Learn More */ = {
+			isa = PBXGroup;
+			children = (
+				1780EB9A2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift */,
+			);
+			path = "Learn More";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +257,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1763471F2D04D504008DB487 /* HealthBridge */,
 			);
 			name = HealthBridge;
 			packageProductDependencies = (
@@ -109,6 +304,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1763473D2D04D5AD008DB487 /* Preview Assets.xcassets in Resources */,
+				1763473E2D04D5AD008DB487 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +316,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1780EB982D26619F001698A2 /* ShelfWithPatientView.swift in Sources */,
+				1780EB812D2391A4001698A2 /* WriteLetterView.swift in Sources */,
+				1763474F2D04D722008DB487 /* ViewModel.swift in Sources */,
+				1780EB922D2658B9001698A2 /* DoctorProfileCell.swift in Sources */,
+				1780EB9B2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift in Sources */,
+				1780EB942D265A82001698A2 /* PatientProfileCell.swift in Sources */,
+				1780EB782D237EF9001698A2 /* ProfileView.swift in Sources */,
+				1780EB792D237EF9001698A2 /* HomeView.swift in Sources */,
+				1780EB7D2D2384EB001698A2 /* TabBar.swift in Sources */,
+				1780EB9D2D267417001698A2 /* LetterView.swift in Sources */,
+				1780EB7A2D237EF9001698A2 /* SearchView.swift in Sources */,
+				1763474D2D04D6B5008DB487 /* View+Ext.swift in Sources */,
+				1780EB9F2D267BD5001698A2 /* SignInView.swift in Sources */,
+				1763473F2D04D5AD008DB487 /* AppTabView.swift in Sources */,
+				1780EB902D2515AE001698A2 /* MockData.swift in Sources */,
+				1780EB862D239815001698A2 /* CircularSFSymbolButtonLabel.swift in Sources */,
+				1780EB7F2D238770001698A2 /* ScaleButtonStyle.swift in Sources */,
+				1763474B2D04D648008DB487 /* HapticManager.swift in Sources */,
+				176347512D04D7E7008DB487 /* Enums.swift in Sources */,
+				1780EB882D239A1B001698A2 /* CapsuleButtonLabel.swift in Sources */,
+				1780EB962D266196001698A2 /* ShelfWithDoctorView.swift in Sources */,
+				1780EB8E2D2506DD001698A2 /* LetterCell.swift in Sources */,
+				176347402D04D5AD008DB487 /* HealthBridgeApp.swift in Sources */,
+				1780EB732D237DCB001698A2 /* Profile.swift in Sources */,
+				1780EB742D237DCB001698A2 /* Letter.swift in Sources */,
+				1780EB8B2D24D5FF001698A2 /* ProgressBlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +478,14 @@
 				DEVELOPMENT_TEAM = J58GFTTNS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,6 +493,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myungjoonkang.HealthBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -284,11 +514,14 @@
 				DEVELOPMENT_TEAM = J58GFTTNS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +529,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myungjoonkang.HealthBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

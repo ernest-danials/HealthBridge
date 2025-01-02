@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct HealthBridgeApp: App {
+    @StateObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                AppTabView()
+                    .disabled(viewModel.userType == .none)
+
+                if viewModel.userType == .none {
+                    SignInView()
+                }
+            }.environmentObject(viewModel)
         }
     }
 }
