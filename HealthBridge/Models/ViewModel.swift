@@ -33,4 +33,7 @@ final class ViewModel: ObservableObject {
             return .gray
         }
     }
+
+    // MARK: - Share Additional Medical Information
+    @Published var currentAdditionalMedicalInformation: [String] = []
 }

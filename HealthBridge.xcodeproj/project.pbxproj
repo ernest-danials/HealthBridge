@@ -35,6 +35,7 @@
 		1780EB9B2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9A2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift */; };
 		1780EB9D2D267417001698A2 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9C2D267417001698A2 /* LetterView.swift */; };
 		1780EB9F2D267BD5001698A2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EB9E2D267BD5001698A2 /* SignInView.swift */; };
+		1780EBA12D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780EBA02D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		1780EB9A2D266F63001698A2 /* LearnMoreAboutAdditionalMedicalInformationSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreAboutAdditionalMedicalInformationSharing.swift; sourceTree = "<group>"; };
 		1780EB9C2D267417001698A2 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		1780EB9E2D267BD5001698A2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1780EBA02D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAdditionalMedicalInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				1780EB972D26619F001698A2 /* ShelfWithPatientView.swift */,
 				1780EB9C2D267417001698A2 /* LetterView.swift */,
 				1780EB9E2D267BD5001698A2 /* SignInView.swift */,
+				1780EBA02D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				1780EB7D2D2384EB001698A2 /* TabBar.swift in Sources */,
 				1780EB9D2D267417001698A2 /* LetterView.swift in Sources */,
 				1780EB7A2D237EF9001698A2 /* SearchView.swift in Sources */,
+				1780EBA12D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift in Sources */,
 				1763474D2D04D6B5008DB487 /* View+Ext.swift in Sources */,
 				1780EB9F2D267BD5001698A2 /* SignInView.swift in Sources */,
 				1763473F2D04D5AD008DB487 /* AppTabView.swift in Sources */,

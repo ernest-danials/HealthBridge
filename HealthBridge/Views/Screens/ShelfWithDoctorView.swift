@@ -12,7 +12,8 @@ struct ShelfWithDoctorView: View {
 
     @EnvironmentObject var viewModel: ViewModel
 
-    @State private var showingMedicalRecordsSheet = false
+    @State private var isShowingLearnMoreScreen = false
+    @State private var isShowingShareAdditionalMedicalInformationSheet = false
 
     private let defaultPatient = MockData.patientProfile // Jane Smith
     private var lettersWithDoctor: [Letter] {
@@ -46,6 +47,7 @@ struct ShelfWithDoctorView: View {
 
                     VStack(alignment: .leading, spacing: 4) {
                         Button {
+                            isShowingShareAdditionalMedicalInformationSheet = true
                             HapticManager.shared.impact(style: .soft)
                         } label: {
                             HStack {
@@ -61,13 +63,19 @@ struct ShelfWithDoctorView: View {
                         }.scaleButtonStyle()
                         
                         Button {
-                            showingMedicalRecordsSheet = true
+                            isShowingLearnMoreScreen = true
+                            HapticManager.shared.impact(style: .soft)
                         } label: {
                             HStack {
-                                Text("You have shared 3 additional information with \(doctor.fullName). ").font(.caption).foregroundStyle(Color.gray) + Text("Learn more").font(.caption).foregroundStyle(Color.accentColor)
+                                Text("You have shared \(viewModel.currentAdditionalMedicalInformation.count) additional information with \(doctor.fullName). ").font(.caption).foregroundStyle(Color.gray) + Text("Learn more").font(.caption).foregroundStyle(Color.accentColor)
                             }.multilineTextAlignment(.leading)
                         }
-                    }.sheet(isPresented: $showingMedicalRecordsSheet) { LearnMoreAboutAdditionalMedicalInformationSharing() }
+                    }.sheet(isPresented: $isShowingLearnMoreScreen) { 
+                        LearnMoreAboutAdditionalMedicalInformationSharing()
+                    }
+                    .sheet(isPresented: $isShowingShareAdditionalMedicalInformationSheet) { 
+                        ShareAdditionalMedicalInformationView()
+                    }
                 }
                 .alignView(to: .leading)
                 .padding(.horizontal)

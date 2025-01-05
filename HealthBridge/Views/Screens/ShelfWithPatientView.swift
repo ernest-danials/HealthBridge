@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ShelfWithPatientView: View {
     let patient: PatientProfile
-
+    
     @EnvironmentObject var viewModel: ViewModel
-
-    @State private var showingMedicalRecordsSheet = false
-
+    
+    @State private var isShowingLearnMoreSheet = false
+    
     private let defaultDoctor = MockData.doctorProfile // Dr. John Doe
     private var lettersWithPatient: [Letter] {
         MockData.letters.filter { letter in
@@ -44,7 +44,7 @@ struct ShelfWithPatientView: View {
                             HStack {
                                 Image(systemName: "ecg.text.page")
                                     .foregroundStyle(.blue)
-
+                                
                                 Text("Additional Medical Records")
                                     .foregroundStyle(.blue)
                             }
@@ -54,25 +54,28 @@ struct ShelfWithPatientView: View {
                         }.scaleButtonStyle()
                         
                         Button {
-                            showingMedicalRecordsSheet = true
+                            isShowingLearnMoreSheet = true
+                            HapticManager.shared.impact(style: .soft)
                         } label: {
                             HStack {
-                                Text("\(patient.firstName) has shared 3 additional information with you. ").font(.caption).foregroundStyle(Color.gray) + Text("Learn more").font(.caption).foregroundStyle(Color.accentColor)
+                                Text("\(patient.firstName) has shared \(viewModel.currentAdditionalMedicalInformation.count) additional information with you. ").font(.caption).foregroundStyle(Color.gray) + Text("Learn more").font(.caption).foregroundStyle(Color.accentColor)
                             }.multilineTextAlignment(.leading)
                         }
-                    }.sheet(isPresented: $showingMedicalRecordsSheet) { LearnMoreAboutAdditionalMedicalInformationSharing() }
+                    }.sheet(isPresented: $isShowingLearnMoreSheet) {
+                        LearnMoreAboutAdditionalMedicalInformationSharing()
+                    }
                 }
                 .alignView(to: .leading)
                 .padding(.horizontal)
-
+                
                 Divider().padding(.horizontal)
-
+                
                 Text("\(lettersWithPatient.count) letters")
-                        .customFont(size: 14, weight: .medium)
-                        .foregroundStyle(.secondary)
-                        .alignView(to: .leading)
-                        .padding(.horizontal)
-
+                    .customFont(size: 14, weight: .medium)
+                    .foregroundStyle(.secondary)
+                    .alignView(to: .leading)
+                    .padding(.horizontal)
+                
                 ForEach(lettersWithPatient, id: \.timestamp) { letter in
                     NavigationLink {
                         LetterView(letter: letter)
@@ -91,7 +94,7 @@ struct ShelfWithPatientView: View {
                 }
             }
             .padding(.vertical)
-
+            
             Spacer().frame(height: 100)
         }
         .prioritiseScaleButtonStyle()

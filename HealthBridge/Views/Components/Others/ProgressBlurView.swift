@@ -14,9 +14,7 @@ struct ProgressBlurView: UIViewRepresentable {
         return view
     }
 
-    func updateUIView(_ uiView: CustomBlurView, context: Context) {
-
-    }
+    func updateUIView(_ uiView: CustomBlurView, context: Context) {}
 }
 
 final class CustomBlurView: UIVisualEffectView {

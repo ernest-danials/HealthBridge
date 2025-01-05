@@ -27,9 +27,9 @@ struct LearnMoreAboutAdditionalMedicalInformationSharing: View {
                     
                     VStack(alignment: .leading, spacing: 24) {
                         Text("What is Additional Medical Information Sharing?")
-                            .customFont(size: 17, weight: .semibold)
+                            .customFont(size:  17, weight: .semibold)
                         
-                        Text("Additional Medical Information is a feature that allows patients to share specific health-related information beyond their basic profile. This system empowers patients to provide relevant medical history, ongoing conditions, and other health-related data that they believe would be valuable for their healthcare providers.")
+                        Text("Additional Medical Information is a feature that allows patients to share specific health-related information beyond their basic profile. This system empowers patients to provide relevant medical history, ongoing conditions, and other health-related data that they believe would be valuable for their healthcare providers. Please note that limiting the information you share may result in misdiagnosis.")
                             .customFont(size: 15, weight: .regular)
                             .foregroundStyle(.secondary)
                             .padding(.top, -16)
