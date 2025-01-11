@@ -160,9 +160,6 @@ struct WriteLetterView: View {
         }
         .alignView(to: .center)
         .background(Material.ultraThin)
-        .sheet(isPresented: $isShowingConnectToComputerView) {
-            ConnectToComputerView()
-        }
     }
 }
 
