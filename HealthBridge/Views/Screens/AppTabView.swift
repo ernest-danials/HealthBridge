@@ -14,7 +14,6 @@ struct AppTabView: View {
         GeometryReader { geo in
             ZStack {
                 HomeView(geo: geo)
-                    //.opacity(viewModel.selectedTab == .home ? 1 : 0)
                     .disabled(viewModel.selectedTab != .home)
                     .transition(.blurReplace)
                 

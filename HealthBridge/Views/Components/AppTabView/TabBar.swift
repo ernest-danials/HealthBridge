@@ -27,12 +27,20 @@ struct TabBar: View {
             case .writeLetter:
                 HStack {
                     Button {
+                        HapticManager.shared.impact(style: .soft)
+                    } label: {
+                        CapsuleButtonLabel(imageName: "paperplane", text: "Send Letter")
+                    }.scaleButtonStyle()
+                    
+                    Button {
                         self.viewModel.changeSelectedTab(to: .home)
                         HapticManager.shared.impact(style: .soft)
                     } label: {
                         CircularSFSymbolButtonLabel(imageName: "xmark")
                     }.scaleButtonStyle(scaleAmount: 0.97)
                 }
+                .alignView(to: .center)
+                .padding()
                 .transition(.offset(y: 20).combined(with: .blurReplace))
             case .search:
                 HStack {

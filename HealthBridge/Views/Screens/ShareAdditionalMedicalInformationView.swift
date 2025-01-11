@@ -61,10 +61,12 @@ struct ShareAdditionalMedicalInformationView: View {
                         
                         ForEach(medicalInformationTypes, id: \.self) { item in
                             Button {
-                                if selectedItems.contains(item) {
-                                    selectedItems.remove(item)
-                                } else {
-                                    selectedItems.insert(item)
+                                withAnimation {
+                                    if selectedItems.contains(item) {
+                                        selectedItems.remove(item)
+                                    } else {
+                                        selectedItems.insert(item)
+                                    }
                                 }
                                 HapticManager.shared.impact(style: .soft)
                             } label: {
@@ -102,21 +104,41 @@ struct ShareAdditionalMedicalInformationView: View {
                         .padding(.horizontal, -15)
                         .padding(.bottom, -100)
                     
-                    Button {
-                        viewModel.currentAdditionalMedicalInformation = Array(selectedItems)
-                        dismiss()
-                        HapticManager.shared.impact(style: .soft)
-                    } label: {
-                        CapsuleButtonLabel(
-                            imageName: "checkmark.circle.fill",
-                            text: "Share Selected Information",
-                            height: 30
-                        )
+                    VStack(spacing: 8) {                        
+                        if selectedItems.isEmpty {
+                            Button {
+                                withAnimation {
+                                    viewModel.currentAdditionalMedicalInformation = []
+                                    selectedItems.removeAll()
+                                }
+                                dismiss()
+                                HapticManager.shared.impact(style: .soft)
+                            } label: {
+                                CapsuleButtonLabel(
+                                    imageName: "xmark.circle.fill",
+                                    text: "Revoke All Information",
+                                    height: 30,
+                                    foregroundColor: .white,
+                                    backgroundColor: .red
+                                )
+                            }
+                            .scaleButtonStyle()
+                        } else {
+                            Button {
+                                viewModel.currentAdditionalMedicalInformation = Array(selectedItems)
+                                dismiss()
+                                HapticManager.shared.impact(style: .soft)
+                            } label: {
+                                CapsuleButtonLabel(
+                                    imageName: "checkmark.circle.fill",
+                                    text: "Share Selected Information",
+                                    height: 30
+                                )
+                            }
+                            .scaleButtonStyle()
+                        }
                     }
-                    .scaleButtonStyle()
                     .padding(.horizontal)
-                    .disabled(selectedItems.isEmpty)
-                    .opacity(selectedItems.isEmpty ? 0.6 : 1.0)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

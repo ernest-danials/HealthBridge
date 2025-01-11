@@ -69,6 +69,7 @@
 		1780EB9C2D267417001698A2 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		1780EB9E2D267BD5001698A2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1780EBA02D2A5C55001698A2 /* ShareAdditionalMedicalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAdditionalMedicalInformationView.swift; sourceTree = "<group>"; };
+		17B32DD72D30C1CC00EF0587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		1763473C2D04D5AD008DB487 /* HealthBridge */ = {
 			isa = PBXGroup;
 			children = (
+				17B32DD72D30C1CC00EF0587 /* Info.plist */,
 				176347462D04D5D7008DB487 /* Others */,
 				176347442D04D5C7008DB487 /* Extensions */,
 				176347472D04D5E2008DB487 /* Models */,
@@ -482,8 +484,10 @@
 				DEVELOPMENT_TEAM = J58GFTTNS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBridge/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthBridge;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "HealthBridge requires camera access to scan QR code when adding a new Shelf.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -518,8 +522,10 @@
 				DEVELOPMENT_TEAM = J58GFTTNS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBridge/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HealthBridge;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "HealthBridge requires camera access to scan QR code when adding a new Shelf.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -68,6 +68,15 @@ struct HomeView: View {
                 }
                 .navigationTitle("Home")
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        HapticManager.shared.impact(style: .soft)
+                    } label: {
+                        Image(systemName: "plus").fontWeight(.semibold)
+                    }
+                }
+            }
         }
         .onChange(of: viewModel.userType) { _, newValue in
             if newValue != .none {
